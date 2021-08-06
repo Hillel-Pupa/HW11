@@ -1,26 +1,17 @@
 .heart {
-    animation: 3s ease 0s infinite beat, 2.5s ease 0s infinite mymove;
+    animation: beat 1s ease 0s infinite alternate;
     color: red;
     font-size: 200px;
-}
-
-@keyframes mymove {
-    30%,
-    50%,
-    100% {
-        text-shadow: 1px 1px 20px black;
-    }
+    width: 200px;
 }
 
 @keyframes beat {
-    0%,
-    50%,
     100% {
         transform: scale(1, 1);
+        text-shadow: 1px 1px 20px black;
     }
 
-    30%,
-    80% {
+    0% {
         transform: scale(0.7, 0.7);
     }
 }
